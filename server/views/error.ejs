@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title><%=error.message%></title>
+  <link href="/stylesheets/404.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class=message>
+      <strong id="status"><%= error.status %></strong>
+      <div style="font-size: 5rem; font-size: calc(20px + 5vmin)" id="message"><%=error.message%></div>
+      
+      <p class=title><%= error.status == 404 ? 'LOOKS LIKE YOU ARE LOST IN THE SPACE' : '' %></p>
+      <p class=message-text><%=error.status == 404 || error.status == 403 ? 'The page you are looking for might be removed or temporally unavailable' : ''%></p>
+    </div>
+  </header>
+  <div class=box-astronaut>
+    <img src="/images/space.svg" alt="" />
+  </div>
+</body>
+
+</html>
