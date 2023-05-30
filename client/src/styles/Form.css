@@ -1,0 +1,10 @@
+.form-title {
+  padding: 30px 20px;
+  /* border-bottom: 2px solid #000; */
+  letter-spacing: 10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
